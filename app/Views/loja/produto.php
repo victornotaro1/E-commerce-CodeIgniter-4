@@ -56,7 +56,7 @@
                     <article class="produto-card">
                         <a href="<?= base_url('produto/' . $p['id']) ?>" class="produto-card-img">
                             <?php if (! empty($p['imagem'])): ?>
-                                <img src="<?= base_url($p['imagem']) ?>" alt="<?= esc($p['nome']) ?>" loading="lazy">
+                                <img src="<?=($p['imagem']) ?>" alt="<?= esc($p['nome']) ?>" loading="lazy">
                             <?php else: ?>
                                 <span class="img-fallback"><?= esc(strtoupper(mb_substr($p['nome'], 0, 1))) ?></span>
                             <?php endif; ?>
