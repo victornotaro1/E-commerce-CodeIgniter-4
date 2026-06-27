@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= esc($title ?? 'Loja') ?> — Minha Loja</title>
+    <title><?= esc($title ?? 'Loja') ?> VitekShop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <header class="topbar">
         <div class="container topbar-inner">
             <a href="<?= base_url('admin') ?>" class="brand">
-                <span class="brand-mark">◆</span> Minha Loja <span class="brand-tag">Admin</span>
+                <span class="brand-mark"></span> VitekShop <span class="brand-tag">Admin</span>
             </a>
             <nav class="nav">
                 <a href="<?= base_url('admin') ?>" class="nav-link <?= (service('uri')->getSegment(1) === 'admin') ? 'active' : '' ?>">Painel</a>

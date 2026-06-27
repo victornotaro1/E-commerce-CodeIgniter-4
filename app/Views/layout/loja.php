@@ -47,7 +47,7 @@
         <?= $this->renderSection('conteudo') ?>
     </main>
 
-   <footer class="bg-dark text-white mt-5 py-5">
+   <footer class="text-white mt-5 py-5" style="background-color: #000;">
     <div class="container">
         <div class="row">
 

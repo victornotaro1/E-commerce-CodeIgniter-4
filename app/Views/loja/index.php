@@ -3,18 +3,31 @@
 <?= $this->section('conteudo') ?>
 
 <section class="hero">
-    <div class="container hero-inner">
-        <div class="hero-content">
-            <span class="hero-eyebrow">Coleção essencial</span>
-            <h1 class="hero-title text-balance">Produtos selecionados para o seu dia a dia</h1>
-            <p class="hero-text text-pretty">Qualidade, preço justo e entrega rápida. Descubra peças que combinam com a sua rotina.</p>
-            <a href="#catalogo" class="btn btn-primary btn-lg">Ver produtos</a>
+    <div class="container-fluid hero-inner"
+         style="background-image: url('https://classofficial.com.br/cdn/shop/files/banner_home_teste_01.png?v=1780437715&width=1500');
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                min-height: 500px;">
+
+        <div style="background: rgba(0,0,0,.45); position:absolute; inset:0;"></div>
+
+        <div class="container position-relative">
+            <div class="hero-content">
+                <span class="hero-eyebrow text-black">Coleção essencial</span>
+                <h1 class="hero-title text-white">Produtos selecionados para o seu dia a dia</h1>
+                <p class="hero-text text-white">
+                    Qualidade, preço justo e entrega rápida. Descubra peças que combinam com a sua rotina.
+                </p>
+                <a href="#catalogo" class="btn btn-primary btn-lg" style="border-color: white;">Ver produtos</a>
+            </div>
         </div>
-        <div class="hero-image">
-            <img src="<?= base_url('assets/loja/hero.png') ?>" alt="Seleção de produtos da loja">
-        </div>
+
     </div>
 </section>
+
+
+
 
 <section id="catalogo" class="catalogo">
     <div class="container">
