@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= esc($title ?? 'Loja') ?> — Minha Loja</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="description" content="Vitrine de produtos selecionados com entrega rápida e compra segura.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,13 +47,44 @@
         <?= $this->renderSection('conteudo') ?>
     </main>
 
-    <footer class="loja-footer">
-        <div class="container loja-footer-inner">
-            <span><span class="brand-mark">◆</span> Minha Loja</span>
-            
+   <footer class="bg-dark text-white mt-5 py-5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <h5>VitekShop</h5>
+                <p>
+                    Moda com qualidade, estilo e os melhores preços para você.
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="<?= base_url() ?>" class="text-white text-decoration-none">Início</a></li>
+                    <li><a href="#catalogo" class="text-white text-decoration-none">Produtos</a></li>
+                    <li><a href="<?= base_url('carrinho') ?>" class="text-white text-decoration-none">Carrinho</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contato</h5>
+                <p>Email: contato@VitekShop.com</p>
+                <p>Telefone: (14) 99999-9999</p>
+            </div>
+
         </div>
-    </footer>
+
+        <hr class="border-secondary">
+
+        <div class="text-center">
+            &copy; <?= date('Y') ?> VitekShop - Todos os direitos reservados.
+        </div>
+    </div>
+</footer>
 
     <?= $this->renderSection('scripts') ?>
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
