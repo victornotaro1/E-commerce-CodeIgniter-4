@@ -44,7 +44,7 @@ public/
 Clone o repositório:
 
 ```
-git clone https://github.com/seu-usuario/seu-projeto.git
+git clone https://github.com/victornotaro1/E-commerce-CodeIgniter-4
 ```
 
 Entre na pasta:
