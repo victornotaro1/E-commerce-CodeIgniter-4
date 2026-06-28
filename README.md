@@ -80,6 +80,8 @@ database.default.DBDriver = MySQLi
 Execute o servidor:
 
 ```
+php spark migrate
+
 php spark serve
 ```
 
@@ -91,17 +93,14 @@ http://localhost:8080
 
 ## Banco de dados
 
-Tabela de produtos:
+INSERT
 
-```
-CREATE TABLE produtos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    descricao TEXT,
-    preco DECIMAL(10,2) NOT NULL,
-    estoque INT NOT NULL,
-    imagem VARCHAR(255)
-);
+INSERT INTO `produtos` (`id`, `nome`, `descricao`, `imagem`, `preco`, `estoque`, `created_at`, `updated_at`) VALUES
+(35, 'Camiseta Healing Preta', 'Camiseta oversized na cor preta.', 'https://acdn-us.mitiendanube.com/stores/001/352/322/products/healing_preta_01-3575bb91644297f9b517727324948827-1024-1024.webp', 129.90, 17, NULL, '2026-06-27 22:39:09'),
+(36, 'Boné Preto', 'Boné casual com ajuste traseiro.', 'https://acdn-us.mitiendanube.com/stores/001/352/322/products/bone_01_02-d7fd86c7aa222ca8d017818184055966-1024-1024.webp', 89.90, 15, NULL, NULL),
+(37, 'Camiseta Happy Hour Off', 'Camiseta oversized na cor off-white.', 'https://acdn-us.mitiendanube.com/stores/001/352/322/products/happy_hour_off-3a1a824cc0fc393b9b17585827889586-1024-1024.webp', 139.90, 18, NULL, NULL),
+(38, 'Short Marrom', 'Short casual marrom para uso diário.', 'https://acdn-us.mitiendanube.com/stores/001/352/322/products/shorts_marrom_01-fadcfb2313473970bb17653947361428-1024-1024.webp', 119.90, 25, NULL, NULL),
+(39, 'Camiseta Jazz Preta', 'Camiseta preta estampada nas costas.', 'https://acdn-us.mitiendanube.com/stores/001/352/322/products/jazz_preta_costas-93ad745191626a88d617574421653439-1024-1024.webp', 149.90, 10, NULL, '2026-06-27 22:39:09');
 ```
 
 ## Observação
